@@ -1,0 +1,44 @@
+//할일 추가
+
+.TodoInsert {
+  display: flex;
+  justify-content: center;
+  // /background: #495057;
+  input {
+    width: 75%;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid black;
+    padding: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: black;
+    transition: 0.1s all ease-in-out;
+    &::placeholder {
+      color: rgba(0,0,0,0.5);
+    }
+    &:focus {
+      background-color: white;
+      border-radius: 10px;
+      border:none;
+    }
+  }
+  button {
+    margin-left: 8px;
+    background-color: rgb(45,40,41);
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s background ease-in;
+    &:hover {
+      background: rgba(45,40,41,0.7);
+    }
+  }
+}
