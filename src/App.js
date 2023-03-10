@@ -6,7 +6,6 @@ import {
   useState,
 } from 'react';
 
-//import { Modal } from './components/Modal';
 import Profile from './components/Profile';
 import ToDoEdit from './components/ToDoEdit';
 import ToDoInsert from './components/ToDoInsert';
@@ -23,7 +22,7 @@ function App() {
     {
       id: 2,
       text: '컴포넌트 스타일링 하기',
-      checked: true,
+      checked: false,
     },
     {
       id: 3,
@@ -76,18 +75,11 @@ function App() {
       ),
     );
   }, []);
+
   return (
     <div className="App">
       <Profile>
-      {insertToggle && (
-          <ToDoEdit
-            onInsert={onInsert}
-            selectedTodo={selectedTodo}
-            onInsertToggle={onInsertToggle}
-            onUpdate={onUpdate}
-            insertToggle={insertToggle}
-          />
-        )}
+      
       </Profile>
       <TodoTemplate>
       <ToDoInsert onInsert={onInsert} />
